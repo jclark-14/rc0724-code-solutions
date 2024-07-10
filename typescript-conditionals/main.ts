@@ -53,7 +53,7 @@ function isOldEnoughToDrinkAndDrive(person: {
   name: string;
   age: number;
 }): unknown {
-  if (person.age < 0) {
+  if (person.age > 0) {
     return false;
   }
 }
