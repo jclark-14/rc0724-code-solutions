@@ -18,7 +18,7 @@ Answer the following questions in the provided markdown file before turning in t
 
 - List the three selector types in order of increasing specificity.
 
-- \*, element, class, id, inline
+- element, class, id,
 
 - Why is using `!important` considered bad practice?
 
