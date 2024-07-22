@@ -8,7 +8,7 @@ $hotButton.addEventListener('click', function () {
   if (!$hotButton || !$clickCount) {
     throw new Error('The $hotButton ro $clickCount query failed');
   }
-  $clickCount.textContent = clickCounter;
+  $clickCount.textContent = 'Clicks: ' + clickCounter;
   if (clickCounter < 4) {
     $hotButton.className = 'hot-button cold';
   } else if (clickCounter < 7) {
