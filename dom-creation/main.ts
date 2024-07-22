@@ -70,6 +70,7 @@ const pokedex: Pokemon[] = [
     imageUrl: 'images/blastoise.png',
   },
 ];
+
 function renderPokemon(pokemon: Pokemon): HTMLDivElement {
   console.log(pokemon);
   const $colOneThird = document.createElement('div');
