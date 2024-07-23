@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  font-family: 'w3-cursive', sans-serif;
+  color: black;
+}
+
+.green {
+  color: green;
+}
+
+.marker {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.wrong-key {
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: red;
+}
