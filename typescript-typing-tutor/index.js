@@ -5,15 +5,25 @@ if (!$div || !$spans) throw new Error('The query failed');
 console.log($spans);
 let keyCount = 0;
 $div.addEventListener('keydown', (event) => {
-  console.log(event.key);
   console.log(event);
-  if ($spans[keyCount].innerText === event.key) {
+  console.log(event.key);
+  console.log($spans[keyCount].innerHTML);
+  if (
+    keyCount === $spans.length - 1 &&
+    $spans[keyCount].innerHTML === event.key
+  ) {
+    $spans[keyCount].className = 'green';
+    return;
+  }
+  if ($spans[keyCount].innerHTML === event.key) {
     keyCount++;
-    if (keyCount < $spans.length) {
-      $spans[keyCount].className = 'marker';
-    }
+    $spans[keyCount].className = 'marker';
     $spans[keyCount - 1].className = 'green';
-  } else if ($spans[keyCount].innerText === ' ' || event.code === 'Space') {
+  } else if (
+    $spans[keyCount].innerHTML === '&nbsp;' &&
+    event.code === 'Space'
+  ) {
+    console.log('yes');
     keyCount++;
     $spans[keyCount].className = 'marker';
     $spans[keyCount - 1].className = 'green';
