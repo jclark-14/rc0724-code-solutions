@@ -9,7 +9,7 @@ if (!$form) throw new Error('$form query failed');
 $form.addEventListener('submit', (event: Event) => {
   event.preventDefault();
   const $formElements = $form.elements as FormElements;
-  const $values: any = {
+  const $values = {
     name: $formElements.name.value,
     email: $formElements.email.value,
     message: $formElements.message.value,
