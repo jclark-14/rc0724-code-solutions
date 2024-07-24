@@ -14,5 +14,5 @@ $form.addEventListener('submit', (event: Event) => {
     email: $formElements.email.value,
     message: $formElements.message.value,
   };
-  console.log('$formElement.name.value: ', $values);
+  console.log('$values: ', $values);
 });
