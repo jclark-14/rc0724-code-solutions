@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(249, 235, 223);
+}
+
+.container {
+  margin: 10rem auto;
+  width: 700px;
+  height: 500px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-div {
+  background-color: white;
+  height: 100%;
+  border: 2px solid grey;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px;
+}
+
+img {
+  width: 60%;
+  margin: auto auto 0;
+  position: relative;
+  bottom: 1rem;
+}
+
+.a-arrow {
+  margin: auto 2.5rem;
+  color: gray;
+}
+
+.dots {
+  display: flex;
+  margin: 0 auto;
+}
+
+.dot {
+  margin: 0 5px;
+  color: grey;
+}
