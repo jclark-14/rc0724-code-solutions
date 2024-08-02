@@ -17,23 +17,23 @@ $dotDiv.addEventListener('click', (event) => {
   if (eventTarget.dataset.view === '1') {
     index = 1;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   } else if (eventTarget.dataset.view === '2') {
     index = 2;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   } else if (eventTarget.dataset.view === '3') {
     index = 3;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   } else if (eventTarget.dataset.view === '4') {
     index = 4;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   } else if (eventTarget.dataset.view === '5') {
     index = 5;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   }
 });
 function imgSwap(index) {
@@ -50,7 +50,7 @@ function imgSwap(index) {
     $img.setAttribute('src', 'images/039.png');
   }
 }
-function autoPlay() {
+function autoplay() {
   const auto = setInterval(() => {
     if (index < 5) {
       index++;
@@ -65,7 +65,7 @@ function autoPlay() {
   }, 2000);
   timerID = auto;
 }
-autoPlay();
+autoplay();
 $left.addEventListener('click', () => {
   clearInterval(timerID);
   index--;
@@ -74,7 +74,7 @@ $left.addEventListener('click', () => {
     index = 5;
   }
   imgSwap(index);
-  autoPlay();
+  autoplay();
 });
 $right.addEventListener('click', () => {
   clearInterval(timerID);
@@ -84,5 +84,5 @@ $right.addEventListener('click', () => {
     index = 1;
   }
   imgSwap(index);
-  autoPlay();
+  autoplay();
 });

@@ -17,23 +17,23 @@ $dotDiv.addEventListener('click', (event: Event): void => {
   if (eventTarget.dataset.view === '1') {
     index = 1;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   } else if (eventTarget.dataset.view === '2') {
     index = 2;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   } else if (eventTarget.dataset.view === '3') {
     index = 3;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   } else if (eventTarget.dataset.view === '4') {
     index = 4;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   } else if (eventTarget.dataset.view === '5') {
     index = 5;
     imgSwap(index);
-    autoPlay();
+    autoplay();
   }
 });
 
@@ -51,7 +51,7 @@ function imgSwap(index: number): void {
     $img.setAttribute('src', 'images/039.png');
   }
 }
-function autoPlay(): any {
+function autoplay(): void {
   const auto = setInterval((): void => {
     if (index < 5) {
       index++;
@@ -67,7 +67,7 @@ function autoPlay(): any {
   }, 2000);
   timerID = auto;
 }
-autoPlay();
+autoplay();
 
 $left.addEventListener('click', (): void => {
   clearInterval(timerID);
@@ -77,7 +77,7 @@ $left.addEventListener('click', (): void => {
     index = 5;
   }
   imgSwap(index);
-  autoPlay();
+  autoplay();
 });
 
 $right.addEventListener('click', (): void => {
@@ -88,5 +88,5 @@ $right.addEventListener('click', (): void => {
     index = 1;
   }
   imgSwap(index);
-  autoPlay();
+  autoplay();
 });
