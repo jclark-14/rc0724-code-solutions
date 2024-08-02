@@ -12,8 +12,6 @@ let timerID: NodeJS.Timeout;
 $dotDiv.addEventListener('click', (event: Event): void => {
   clearInterval(timerID);
   const eventTarget = event.target as HTMLElement;
-  console.log(eventTarget);
-  console.log(eventTarget.dataset.view);
   if (eventTarget.dataset.view === '1') {
     index = 1;
     imgSwap(index);
@@ -55,7 +53,6 @@ function autoplay(): void {
   const auto = setInterval((): void => {
     if (index < 5) {
       index++;
-
       imgSwap(index);
       console.log(index);
     } else {
