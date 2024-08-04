@@ -12,8 +12,6 @@ let timerID;
 $dotDiv.addEventListener('click', (event) => {
   clearInterval(timerID);
   const eventTarget = event.target;
-  console.log(eventTarget);
-  console.log(eventTarget.dataset.view);
   if (eventTarget.dataset.view === '1') {
     index = 1;
     imgSwap(index);
