@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.light-room {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div button {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 0);
+  border: 2px yellow solid;
+}
+
+.dark-room {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog {
+  background-color: black;
+}
+
+dialog button {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: rgb(97, 97, 97);
+  border: 2px rgb(97, 97, 97) solid;
+}
