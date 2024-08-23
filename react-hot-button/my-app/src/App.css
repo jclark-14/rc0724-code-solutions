@@ -1,0 +1,17 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 250px;
+  height: 100px;
+  box-shadow: 4px 4px 6px rgb(76, 76, 76);
+}
