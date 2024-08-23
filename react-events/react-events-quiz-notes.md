@@ -6,15 +6,15 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is an "event" in React?
 
-- Similar to an event in JS. It a listener is attached to a component that creates an event object on execution
+- Similar to an event in JS. A listener is attached to a component that creates an event object on execution
 
 - What is an "event handler"? Which component declares the handler?
 
-- an Event handler is a function that handles the event. The parent component is the component that should declare the handler
+- an Event handler is a function that handles the event. The parent component should be the component that declares the handler function. however, the component the listener is tied to can also declare the handler
 
 - How do you pass an event handler to a React component?
 
-- you pass it as a prop
+- you pass it down from its parent as a prop
 
 - What is the naming convention for event handlers?
 
@@ -22,7 +22,7 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is an "event handler prop"? Which component declares the prop?
 
--an event handler prop is a prop attached to a component that you assign the event handler to. The component that the handler is attached to declares the prop
+-an event handler prop is a prop attached to a component that you assign the event handler function to. The component that the handler is attached to declares the prop
 
 - What are some custom event handler props a component may wish to define?
 
