@@ -22,11 +22,8 @@ export function ToggleButton() {
   let text = isOn ? textOnOff[1] : textOnOff[0];
   let position = isOn ? height[1] : height[0];
   function handleClick() {
-    if (!isOn) {
-      setIsOn(true);
-    } else {
-      setIsOn(false);
-    }
+    setIsOn(!isOn);
+
     styleButton = isOn ? buttonOnStyling[0] : buttonOffStyling[0];
     styleToggle = isOn ? buttonOnStyling[1] : buttonOffStyling[1];
     text = isOn ? textOnOff[1] : textOnOff[0];
