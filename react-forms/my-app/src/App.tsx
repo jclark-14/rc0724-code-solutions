@@ -1,9 +1,20 @@
 // import { RegistrationFormUncontrolled } from './RegistrationFormUncontrolled';
-import { RegistrationFormControlled } from './RegistrationFromControlled';
+// import { RegistrationFormControlled } from './RegistrationFromControlled';
+import { UserForm } from './UserForm';
 import './App.css';
 
+const user = {
+  username: 'Jody',
+  password: 'hello',
+};
+
 function App() {
-  return <RegistrationFormControlled />;
+  return (
+    <>
+      <UserForm />
+      <UserForm user={user} />
+    </>
+  );
 }
 
 export default App;
