@@ -1,0 +1,41 @@
+.dark-purple {
+  background-color: rgb(73, 12, 73);
+}
+
+.purple {
+  background-color: rgb(96, 17, 96);
+}
+
+.red {
+  background-color: rgb(159, 40, 40);
+}
+
+.orange {
+  background-color: rgb(240, 111, 25);
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-black {
+  color: black;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
