@@ -48,3 +48,7 @@ button {
   height: 100px;
   width: 100px;
 }
+
+.selected {
+  background-color: rgb(99, 224, 255);
+}
