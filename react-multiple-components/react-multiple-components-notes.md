@@ -6,9 +6,17 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What are the phases in the React design process?
 
+1. Static elements
+2. State Reading
+3. Handle Events
+
 - How does data flow in React?
 
+-data/functions passed down props are passed down to children; actions can be passed up to parents
+
 - How can children components modify state in their parents?
+
+- by calling functions on events and passing it to parent
 
 ## Notes
 
