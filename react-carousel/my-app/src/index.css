@@ -45,3 +45,7 @@ a {
 .dots-div {
   margin-top: 50px;
 }
+
+svg.fill {
+  background-color: black;
+}

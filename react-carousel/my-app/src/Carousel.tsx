@@ -1,5 +1,5 @@
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import { GoDotFill } from 'react-icons/go';
+import { GoDotFill, GoDot } from 'react-icons/go';
 import { useEffect, useState } from 'react';
 
 type Image = {
@@ -17,6 +17,7 @@ type ImageCardProps = {
 type NavDotsProps = {
   images: Image[];
   onClick: (index: number) => void;
+  currentIndex: number;
 };
 
 export function Carousel({ images }: Props) {
@@ -54,7 +55,11 @@ export function Carousel({ images }: Props) {
           <FaAngleRight size="90px" onClick={handleNextClick} />
         </a>
       </div>
-      <NavDots images={images} onClick={handleNavDotClick} />
+      <NavDots
+        images={images}
+        onClick={handleNavDotClick}
+        currentIndex={currentIndex}
+      />
     </div>
   );
 }
@@ -67,10 +72,14 @@ function ImageCard({ image }: ImageCardProps) {
   );
 }
 
-function NavDots({ images, onClick }: NavDotsProps) {
+function NavDots({ images, onClick, currentIndex }: NavDotsProps) {
   const navDots = images.map((image, index) => (
     <a href="#" key={index}>
-      <GoDotFill size="50px" onClick={() => onClick(index)} />
+      {index === currentIndex ? (
+        <GoDotFill size="50px" onClick={() => onClick(index)} />
+      ) : (
+        <GoDot size="50px" onClick={() => onClick(index)} />
+      )}
     </a>
   ));
   return <div className="dots-div">{navDots}</div>;
