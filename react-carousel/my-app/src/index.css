@@ -1,0 +1,47 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  padding-top: 70px;
+}
+
+svg {
+  padding: 5px;
+}
+
+a {
+  cursor: pointer;
+  color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 10px black solid;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.img {
+  width: 650px;
+  height: 650px;
+  object-fit: scale-down;
+}
+
+.img-nav-row {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dots-div {
+  margin-top: 50px;
+}
