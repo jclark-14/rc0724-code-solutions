@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.delete {
+  width: 170px;
+  height: 90px;
+  font-size: 2rem;
+  border-radius: 8px;
+  border: 3px solid black;
+  cursor: pointer;
+  background-color: rgb(221, 221, 221);
+}
+
+.modal-button {
+  width: 140px;
+  height: 70px;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  border: 3px solid black;
+  cursor: pointer;
+  background-color: rgb(221, 221, 221);
+}
+
+dialog::backdrop {
+  background-color: rgba(46, 46, 46, 0.479);
+}
+
+.modal-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dialog {
+  width: 550px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+p {
+  flex-basis: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.buttons {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
