@@ -2,20 +2,20 @@ import express from 'express';
 
 const app = express();
 
-// app.use((req, res, next) => {
-//   console.log(`method: ${req.method} path: ${req.path}`, new Date());
-//   next();
-// });
-app.get('/notes/123', (req, res) => {
-  res.send(`${req.method} ${req.path} ${new Date()}`);
+app.use((req, res, next) => {
+  console.log(req.method, req.path, new Date());
+  next();
+});
+app.post('/notes/123', (req, res) => {
+  res.send('notes/123 post endpoint');
 });
 
 app.get('/notes', (req, res) => {
-  res.send(`${req.method} ${req.path} ${new Date()}`);
+  res.send('get /notes');
 });
 
 app.get('/', (req, res) => {
-  res.send(`${req.method} ${req.path} ${new Date()}`);
+  res.send('get /');
 });
 
 app.listen(8080, () => {
