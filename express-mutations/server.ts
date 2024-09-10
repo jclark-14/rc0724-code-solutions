@@ -51,7 +51,7 @@ app.post('/api/actors', async (req, res, next) => {
     `;
     const params = [firstName, lastName];
     const results = await db.query(sql, params);
-    const actor = results.rows;
+    const actor = results.rows[0];
     res.status(201).json(actor);
   } catch (err) {
     next(err);
