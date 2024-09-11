@@ -108,7 +108,7 @@ app.delete('/api/grades/:gradeId', async (req, res, next) => {
     const results = await db.query<Grade>(sql, params);
     const grade = results.rows[0];
     if (!grade) throw new ClientError(404, 'grade not found');
-    res.status(200).json(grade);
+    res.sendStatus(204);
   } catch (err) {
     next(err);
   }
