@@ -10,11 +10,11 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What two things need to be done to properly handle HTTP request errors? Why?
 
-- checking the response status (not the status code). and catching the error in the catch block of the try/catch. If the errors are not accounted for then you app can crash
+- read the http response and have appropriate error handling when response is not ok. Server can respond with 400 and 500 errors successfully. We need to be sure to handles these and they are caught it the response from http request
 
 - How can `useEffect` be used to load data for a component?
 
-- you can use async functions within the useEffect call back to retrieve data that the component can then use on the next render
+- After the component renders. A call is made to the server/api with the needed data. once data is received, useEffect can call a rerender with needed updates
 
 - How do you use `useEffect` to load component data just once when the component mounts?
 
@@ -22,11 +22,11 @@ Answer the following questions in the provided markdown file before turning in t
 
 - How do you use `useEffect` to load component data every time the data key changes?
 
-- you list the data key in the dependency array
+- you list that data state in the dependency array
 
 - In a large-scale production app, what are some better alternatives for loading and managing backend data?
 
-- using a third-party data management library like React Query or Vercel
+- React Query and Vercel SWR
 
 ## Notes
 
